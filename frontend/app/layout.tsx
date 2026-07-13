@@ -17,14 +17,14 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'Morgendrot - IOTA Messaging & Access Control',
-  description: 'Local dashboard for IOTA/Stardust messaging, access keys, tickets, and device monitoring',
+  title: 'IOTA Messenger',
+  description: 'Wallet, Mailbox-Chat, Gruppen und IOTA-Transfer — standalone ohne Boss oder Handoff.',
   manifest: '/manifest.webmanifest',
   generator: 'v0.app',
-  applicationName: 'Morgendrot Messenger',
+  applicationName: 'IOTA Messenger',
   appleWebApp: {
     capable: true,
-    title: 'Morgendrot',
+    title: 'IOTA Messenger',
     statusBarStyle: 'black-translucent',
   },
   icons: {

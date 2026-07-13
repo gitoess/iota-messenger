@@ -7,7 +7,7 @@
   },
   "description": {
     "default": "",
-    "standalone": "Standalone APK without Morgendrot server: mnemonic for direct send/receive — import handoff in settings first.",
+    "standalone": "Standalone APK: mnemonic for direct send/receive — create wallet in the solo wizard.",
     "solo": "Private mode without boss — like on desktop: unlock vault, import seed, or create new profile.",
     "streamlined": "Package, mailbox and full node are already from handoff — enter your seed phrase from the boss."
   },
@@ -80,7 +80,7 @@
     "sessionLocal": "local wallet session",
     "sessionServer": "server session",
     "signIntro": "Unlocks the <strong>{{session}}</strong> for signing.",
-    "standaloneExtra": " Standalone: seed is stored encrypted on device — no Morgendrot backend required.",
+    "standaloneExtra": " Standalone: seed is stored encrypted on device — no server required.",
     "serverExtra": " Password decrypts the vault file on device or backend.",
     "signerCli": "<mono>SIGNER=cli</mono>: IOTA CLI keystore password — no mnemonic here.",
     "signerSdk": "<mono>SIGNER=sdk</mono>: after one-time import, password alone often suffices under “Open vault”.",

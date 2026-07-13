@@ -23,7 +23,8 @@
     "bootstrap:resync": "node scripts/bootstrap-from-morgendrot.mjs",
     "smoke": "node scripts/smoke-iota-messenger.mjs",
     "smoke:phase3-chain": "node scripts/smoke-phase3-chain-probe.mjs",
-    "smoke:phase3-desk": "node scripts/smoke-phase3-desk.mjs"
+    "smoke:phase3-desk": "node scripts/smoke-phase3-desk.mjs",
+    "smoke:standalone-apk": "node scripts/smoke-standalone-apk.mjs"
   },
   "dependencies": {
     "@morgendrot/core": "file:packages/morgendrot-core",

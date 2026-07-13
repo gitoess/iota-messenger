@@ -16,7 +16,7 @@ describe('i18n', () => {
     await setAppLocale('en')
     expect(getAppLocale()).toBe('en')
     expect(i18n.t('firstStart.title', { ns: 'standalone' })).toMatch(/Welcome/)
-    expect(i18n.t('brand.messenger', { ns: 'dashboard' })).toBe('Morgendrot Messenger')
+    expect(i18n.t('brand.messenger', { ns: 'dashboard' })).toBe('IOTA Messenger')
     expect(i18n.t('connection.chatConnected', { ns: 'dashboard' })).toBe('Chat connected')
     await setAppLocale('de')
   })

@@ -1,4 +1,4 @@
-package de.morgendrot.messenger;
+package de.iota.messenger;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -14,15 +14,15 @@ import android.os.IBinder;
 import androidx.core.app.NotificationCompat;
 
 /**
- * § H.6f — hält den Prozess im Vordergrund; ersetzt keine BLE/WebView-Logik.
+ * Hält den Prozess im Vordergrund; ersetzt keine WebView-Logik.
  */
 public class MessengerForegroundService extends Service {
 
-    public static final String ACTION_START = "de.morgendrot.messenger.fg.START";
-    public static final String ACTION_STOP = "de.morgendrot.messenger.fg.STOP";
+    public static final String ACTION_START = "de.iota.messenger.fg.START";
+    public static final String ACTION_STOP = "de.iota.messenger.fg.STOP";
     public static final String EXTRA_REASON = "reason";
 
-    private static final String CHANNEL_ID = "morgendrot_messenger_sync";
+    private static final String CHANNEL_ID = "iota_messenger_sync";
     private static final int NOTIFICATION_ID = 61001;
 
     private static volatile boolean running = false;

@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "Morgendrot Messenger",
-  "short_name": "Morgendrot",
-  "description": "IOTA-Messaging, Meshtastic/Web Bluetooth, Zugriffskontrolle – Einsatz- und Laborbetrieb.",
+  "name": "IOTA Messenger",
+  "short_name": "IOTA",
+  "description": "Wallet, Mailbox-Chat, Gruppen und IOTA-Transfer auf Testnet/Mainnet.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

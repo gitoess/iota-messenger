@@ -13,7 +13,7 @@
     "soloTitle": "Privat / Solo — ohne Boss",
     "soloSubtitle": "Wallet selbst einrichten wie am PC.",
     "soloDetail": "Seed importieren, neu anlegen oder mit App-Passwort entsperren. Netz & Postfach folgen danach.",
-    "tipEmptyBasisUrl": "Tipp: Basis-URL leer lassen für Standalone ohne Morgendrot-Server.",
+    "tipEmptyBasisUrl": "Tipp: Basis-URL leer lassen — IOTA Messenger nutzt Direkt-RPC.",
     "actionBoss": "Einsatzleitung (Boss)",
     "actionEinsatz": "Einsatz-Helfer",
     "actionSolo": "Privat / Solo"
@@ -40,7 +40,7 @@
     "soloActive": "Privat/Solo aktiv — Wallet entsperren, danach Netz & Postfach im Solo-Wizard auf dem Dashboard.",
     "soloWalletSetup": "Privat/Solo: Wallet einrichten (Seed). Danach Netz & Postfach im Solo-Wizard — kein Boss nötig.",
     "handoffOkNeedSeed": "Handoff OK — Seed einrichten (QR vom Boss), dann Chat unter Nachrichten.",
-    "standaloneActive": "Standalone-APK aktiv — Direkt-RPC, kein Morgendrot-Server nötig.",
+    "standaloneActive": "Standalone-APK aktiv — Direkt-RPC, kein Server nötig.",
     "missingFullnode": "Standalone-APK: Fullnode-URL fehlt — Handoff erneut prüfen."
   },
   "offline": {

@@ -7,7 +7,7 @@
   },
   "description": {
     "default": "",
-    "standalone": "Standalone-APK ohne Morgendrot-Server: Mnemonic für Direkt senden/empfangen — Handoff vorher unter Einstellungen importieren.",
+    "standalone": "Standalone-APK: Mnemonic für Direkt senden/empfangen — Wallet im Solo-Wizard anlegen.",
     "solo": "Privat-Modus ohne Boss — wie am PC: Tresor öffnen, Seed importieren oder neues Profil anlegen.",
     "streamlined": "Package, Mailbox und Fullnode sind schon aus dem Handoff da — nur noch deine Seed-Phrase vom Boss."
   },
@@ -80,7 +80,7 @@
     "sessionLocal": "lokale Wallet-Sitzung",
     "sessionServer": "Server-Sitzung",
     "signIntro": "Entsperrt die <strong>{{session}}</strong> zum Signieren.",
-    "standaloneExtra": " Standalone: Seed liegt verschlüsselt auf dem Gerät — kein Morgendrot-Backend nötig.",
+    "standaloneExtra": " Standalone: Seed liegt verschlüsselt auf dem Gerät — kein Server nötig.",
     "serverExtra": " Das Passwort entschlüsselt die Vault-Datei auf dem Gerät bzw. der Basis.",
     "signerCli": "<mono>SIGNER=cli</mono>: Passwort des IOTA-CLI-Keystores — kein Mnemonic hier.",
     "signerSdk": "<mono>SIGNER=sdk</mono>: Nach einmaligem Import reicht oft nur noch das Passwort unter „Tresor öffnen“.",

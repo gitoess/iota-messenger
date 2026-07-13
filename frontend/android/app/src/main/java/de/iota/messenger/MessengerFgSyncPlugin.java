@@ -1,4 +1,4 @@
-package de.morgendrot.messenger;
+package de.iota.messenger;
 
 import android.Manifest;
 import android.content.Intent;

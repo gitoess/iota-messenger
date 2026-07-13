@@ -34,7 +34,7 @@ async function ensureNativeCameraPermission(): Promise<{ ok: true } | { error: s
   if (perm.camera === 'granted') return { ok: true }
   return {
     error:
-      'Kamera-Berechtigung verweigert — in Android-Einstellungen für Morgendrot Messenger erlauben oder QR-Text einfügen.',
+      'Kamera-Berechtigung verweigert — in Android-Einstellungen für IOTA Messenger erlauben oder QR-Text einfügen.',
   }
 }
 

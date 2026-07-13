@@ -8,46 +8,46 @@ Technische Basis: Move-Messenger-Protokoll (aus Morgendrot abgeleitet, siehe `UP
 ## Voraussetzungen
 
 - Node.js 20+
-- Deployed `PACKAGE_ID` + `MAILBOX_ID` auf Testnet oder Mainnet
+- Android SDK + JDK (nur für APK-Build)
+- Deployed `PACKAGE_ID` + `MAILBOX_ID` auf Testnet oder Mainnet (vorbelegt in `product/testnet-starter.json`)
 
-## Ersteinrichtung
+## Ersteinrichtung (Desktop)
 
 ```bash
 npm install
 cd frontend && npm install && cd ..
 cp .env.example .env
-# .env: PACKAGE_ID, MAILBOX_ID, RPC_URL eintragen
 npm run dev
 ```
 
 - **UI:** http://127.0.0.1:3341  
-- **API:** http://127.0.0.1:3342 (optional — Kernflows laufen auch per Direkt-RPC)
+- **API:** http://127.0.0.1:3342 (optional — Kernflows laufen per Direkt-RPC)
 
-## APK (Android)
+## Standalone-APK (Android)
+
+**Paket-ID:** `de.iota.messenger` — parallel zu Morgendrot Messenger installierbar.
 
 ```bash
+npm run smoke:standalone-apk   # Schreibtisch + Branding + Phase-3-Tests
 cd frontend
-npm run apk:debug:build
+npm run apk:debug:build        # → android/app/build/outputs/apk/debug/app-debug.apk
+npm run apk:debug:install      # optional per USB
 ```
 
-## Was Phase 2 enthält (Testnet-Starter)
+Anleitung + Feldtest: [`docs/STANDALONE-APK.md`](docs/STANDALONE-APK.md)  
+Zwei-Geräte-Test: [`docs/PHASE-3-ZWEI-GERAETE-TEST.md`](docs/PHASE-3-ZWEI-GERAETE-TEST.md)
 
-- `product/testnet-starter.json` — feste Testnet-`PACKAGE_ID` / `MAILBOX_ID` (Feldtest Block2)
-- Automatische Anwendung beim App-Start (`IotaMessengerTestnetBootstrap`)
-- Kein manueller Chain-Wizard nötig — nur noch **Wallet anlegen** (Mnemonic)
-- `.env` / `.env.example` mit denselben Testnet-IDs vorbelegt
-
-## Smoke-Test
+## Smoke-Tests
 
 ```bash
-npm run smoke              # API + Produkt-Checks
-npm run smoke:phase3-desk  # + Chain-Probe + Peering/Handshake-Unit
+npm run smoke                  # API + Produkt-Checks
+npm run smoke:phase3-desk      # + Chain-Probe + Peering/Handshake-Unit
+npm run smoke:standalone-apk   # + APK-Branding + alles oben
 ```
 
-## Phase 3 — Zwei-Geräte-Feldtest
+## GitHub
 
-Anleitung: [`docs/PHASE-3-ZWEI-GERAETE-TEST.md`](docs/PHASE-3-ZWEI-GERAETE-TEST.md)  
-Logbuch: [`docs/TEST-RUN-LOGBOOK.md`](docs/TEST-RUN-LOGBOOK.md)
+https://github.com/gitoess/iota-messenger
 
 ## Lizenz
 

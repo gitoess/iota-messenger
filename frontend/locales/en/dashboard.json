@@ -1,10 +1,10 @@
 {
   "brand": {
-    "messenger": "Morgendrot Messenger",
-    "morgendrot": "Morgendrot"
+    "messenger": "IOTA Messenger",
+    "morgendrot": "IOTA Messenger"
   },
   "loading": {
-    "title": "Loading Morgendrot…",
+    "title": "Loading IOTA Messenger…",
     "subtitle": "The first start may take a few seconds."
   },
   "nav": {

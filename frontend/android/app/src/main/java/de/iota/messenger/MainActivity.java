@@ -1,4 +1,4 @@
-package de.morgendrot.messenger;
+package de.iota.messenger;
 
 import android.os.Bundle;
 import android.webkit.WebSettings;
@@ -19,7 +19,7 @@ public class MainActivity extends BridgeActivity {
         allowLanHttpFromHttpsShell();
     }
 
-    /** Capacitor shell is https://localhost — Boss-LAN API is cleartext HTTP (§ H.36 P1). */
+    /** Capacitor shell is https://localhost — optional LAN API is cleartext HTTP. */
     private void allowLanHttpFromHttpsShell() {
         WebView webView = bridge != null ? bridge.getWebView() : null;
         if (webView != null) {
