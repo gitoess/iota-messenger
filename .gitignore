@@ -7,4 +7,5 @@ frontend/.next/
 .morgendrot-vault
 .morgendrot-vault.*
 *.log
+logs/
 tmp/
