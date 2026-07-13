@@ -1,0 +1,22 @@
+{
+  "messengerCapabilities": {
+    "simpleMode": true,
+    "transport": {
+      "iota": { "read": true, "write": true },
+      "lora": { "read": false, "write": false },
+      "telegram": { "read": false, "write": false },
+      "ble": { "read": false, "write": false },
+      "streams": { "read": false, "write": false }
+    },
+    "security": {
+      "forceEncryptionOnly": true,
+      "allowPlaintextFallback": false
+    },
+    "product": {
+      "canCreateGroup": true,
+      "canInviteMembers": true,
+      "canExportData": true,
+      "canManageEinsatzTemplates": false
+    }
+  }
+}

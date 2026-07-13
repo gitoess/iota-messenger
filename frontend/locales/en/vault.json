@@ -1,0 +1,90 @@
+{
+  "title": {
+    "default": "Unlock vault",
+    "standalone": "Unlock direct IOTA",
+    "solo": "Set up wallet",
+    "streamlined": "Enter mnemonic"
+  },
+  "description": {
+    "default": "",
+    "standalone": "Standalone APK without Morgendrot server: mnemonic for direct send/receive — import handoff in settings first.",
+    "solo": "Private mode without boss — like on desktop: unlock vault, import seed, or create new profile.",
+    "streamlined": "Package, mailbox and full node are already from handoff — enter your seed phrase from the boss."
+  },
+  "streamlined": {
+    "walletKeyLabel": "Wallet key",
+    "walletKeyPlaceholder": "Mnemonic (12+ words), IOTA Bech32 secret or 64 hex …",
+    "hint": "From boss: same seed phrase as in the handoff profile. Bech32/hex secret works too. New profile only makes sense without team handoff.",
+    "appPasswordOptional": "App password (optional)",
+    "activating": "Activating…",
+    "activateChat": "Activate chat",
+    "advancedCreate": "Advanced: create new profile (only without boss handoff)"
+  },
+  "vault": {
+    "title": "Open vault",
+    "subtitle": "Unlock with password",
+    "noLocalFileSdk": "No local vault file — use “Import seed” or “New profile”.",
+    "noLocalFileChain": "No local file: if the vault is on-chain only, use the same vault password as when saving on-chain — keys load into the session after unlock.",
+    "passwordLabel": "Password",
+    "passwordPlaceholder": "Password",
+    "mnemonicOptionalLabel": "Mnemonic (if needed)",
+    "mnemonicPlaceholder": "24 words …",
+    "hideMnemonic": "Hide",
+    "showMnemonic": "Add mnemonic (advanced)",
+    "unlocking": "Unlocking…",
+    "unlock": "Unlock"
+  },
+  "import": {
+    "title": "Import seed",
+    "subtitle": "Restore existing profile (24 words)",
+    "hint": "Vault password <strong>and</strong> your IOTA mnemonic (12–24 words) or Bech32 secret — required for <mono>SIGNER=sdk</mono> without stored import.",
+    "vaultPasswordPlaceholder": "Vault password",
+    "newPasswordPlaceholder": "New vault password (min. 8 characters)",
+    "confirmPasswordPlaceholder": "Repeat password",
+    "mnemonicLabel": "Mnemonic / secret (required)",
+    "mnemonicPlaceholder": "24 words or Bech32 secret …",
+    "importRecoverHint": "With seed: password is the new vault password (min. 8 characters) — not necessarily the old one. Seed/Bech32 secret is required.",
+    "importing": "Importing…",
+    "restore": "Restore profile"
+  },
+  "create": {
+    "title": "Create new profile",
+    "subtitle": "Create a fresh vault",
+    "existingVault": "A vault file already exists — “Open vault” is usually enough.",
+    "mnemonicLabel": "Mnemonic / secret",
+    "mnemonicPlaceholder": "24 words …",
+    "repeatLabel": "Repeat",
+    "repeatPlaceholder": "Enter again",
+    "newPasswordPlaceholder": "New password (min. 8 characters)",
+    "confirmPasswordPlaceholder": "Repeat password",
+    "creating": "Creating…",
+    "create": "Create profile",
+    "blockedHint": "Still required: password at least 8 characters, both fields must match, and a valid seed (generate or paste)."
+  },
+  "sdkMnemonicPref": {
+    "label": "Remember wallet seed",
+    "hint": "On by default: encrypted in vault and browser — next start needs only your password (Direct-RPC, inbox). Can be turned off."
+  },
+  "messengerSetup": {
+    "link": "or set up messenger",
+    "hint": "Guided wizard — step by step, pause anytime",
+    "linkBoss": "or set up command post",
+    "hintBoss": "Wallet, package, mailboxes and first helpers — skip password for now"
+  },
+  "backToWizard": {
+    "link": "Back to setup wizard",
+    "hint": "Continue wizard — unlock vault now or later"
+  },
+  "techNotes": {
+    "toggle": "Technical notes",
+    "sessionLocal": "local wallet session",
+    "sessionServer": "server session",
+    "signIntro": "Unlocks the <strong>{{session}}</strong> for signing.",
+    "standaloneExtra": " Standalone: seed is stored encrypted on device — no Morgendrot backend required.",
+    "serverExtra": " Password decrypts the vault file on device or backend.",
+    "signerCli": "<mono>SIGNER=cli</mono>: IOTA CLI keystore password — no mnemonic here.",
+    "signerSdk": "<mono>SIGNER=sdk</mono>: after one-time import, password alone often suffices under “Open vault”.",
+    "signerRemote": "<mono>SIGNER=remote</mono>: vault password; signature external.",
+    "forgotPassword": "<strong>Forgot password?</strong> Vault content cannot be read without the old password. With seed you can create a new profile — old messaging keys stay in the old vault."
+  }
+}

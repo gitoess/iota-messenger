@@ -1,0 +1,31 @@
+{
+  "name": "@morgendrot/core",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "Messenger-Kern: offline-mailbox queue, direkter IOTA-Light-Client (optional), Attestation-Typen — ohne React; transport- und speicherneutral (Ports).",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./queue/offline-mailbox": "./src/queue/offline-mailbox/index.ts",
+    "./ports": "./src/ports/index.ts",
+    "./device-time": "./src/device-time/index.ts",
+    "./iota": "./src/iota/index.ts",
+    "./attestation": "./src/attestation/index.ts",
+    "./image": "./src/image/index.ts",
+    "./forensic-batch": "./src/forensic-batch/index.ts",
+    "./forensic-batch/registry": "./src/forensic-batch/registry.ts"
+  },
+  "scripts": {
+    "test:unit": "vitest run",
+    "test:unit:watch": "vitest"
+  },
+  "dependencies": {
+    "@iota/iota-sdk": "^1.11.0",
+    "@morgendrot/shared": "file:../../src/shared"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.4"
+  }
+}

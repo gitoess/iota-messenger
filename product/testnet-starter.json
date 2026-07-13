@@ -1,0 +1,11 @@
+{
+  "label": "IOTA Messenger Testnet (öffentlich)",
+  "network": "testnet",
+  "rpcUrl": "https://api.testnet.iota.cafe",
+  "packageId": "0x06e099c095548b36cfb6eb3373ad1aa73e72f83f6e53c51854df719e7836dc88",
+  "mailboxId": "0x32b65223c4bef0d932d40b65af4a1a77b0877495d450beb98fc05303714137f6",
+  "vaultRegistryId": "0xb6bed71f989de407f56b40d0f3a969e3484a5a11e9d95ce4fa37cf20d9f06aa4",
+  "commandRegistryId": "0xe4084e1ce9ff6f68a916595067b8c257dd92ae85bab809f85e9adb76a0de163e",
+  "source": "morgendrot-globals fieldtest 2026-07 (Block2)",
+  "notes": "Öffentliches Testnet-Deployment — nur für Übung/Demos. Kein Produktversprechen."
+}

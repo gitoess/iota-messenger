@@ -1,0 +1,49 @@
+{
+  "name": "iota-messenger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "IOTA Messenger — Wallet, Mailbox-Chat, Gruppen, IOTA-Transfer. Eigenständiges Projekt (abgeleitet von Morgendrot).",
+  "upstream": {
+    "repository": "morgendrot-messenger",
+    "commit": "62ad7aa",
+    "bootstrappedAt": "2026-07-10"
+  },
+  "scripts": {
+    "postinstall": "node scripts/ensure-env.mjs",
+    "start:api": "tsx src/start-with-secrets.ts",
+    "dev:next": "npm run dev --prefix frontend",
+    "dev": "concurrently --names \"api,next\" -c \"cyan,magenta\" \"npm run start:api\" \"npm run dev:next\"",
+    "dev:lan": "concurrently --names \"api,next\" -c \"cyan,magenta\" \"npm run start:api\" \"npm run dev:lan --prefix frontend\"",
+    "build:next": "npm run build --prefix frontend",
+    "start:next": "npm run start --prefix frontend",
+    "start:prod": "concurrently --names \"api,next\" -c \"cyan,magenta\" \"npm run start:api\" \"npm run start:next\"",
+    "start:prod:lan": "concurrently --names \"api,next\" -c \"cyan,magenta\" \"npm run start:api\" \"npm run start:lan --prefix frontend\"",
+    "apply:patches": "node scripts/apply-product-patches.mjs",
+    "bootstrap:resync": "node scripts/bootstrap-from-morgendrot.mjs",
+    "smoke": "node scripts/smoke-iota-messenger.mjs",
+    "smoke:phase3-chain": "node scripts/smoke-phase3-chain-probe.mjs",
+    "smoke:phase3-desk": "node scripts/smoke-phase3-desk.mjs"
+  },
+  "dependencies": {
+    "@morgendrot/core": "file:packages/morgendrot-core",
+    "@morgendrot/shared": "file:src/shared",
+    "@iota/iota-sdk": "^1.11.0",
+    "archiver": "^7.0.1",
+    "dotenv": "^17.3.1",
+    "pdfkit": "^0.17.2",
+    "readline-sync": "^1.4.10",
+    "socks-proxy-agent": "^8.0.5",
+    "stripe": "^17.7.0",
+    "tsx": "^4.21.0",
+    "undici": "^7.24.5",
+    "winston": "^3.19.0",
+    "winston-daily-rotate-file": "^5.0.0",
+    "sharp": "^0.33.5",
+    "concurrently": "^9.1.0"
+  },
+  "license": "AGPL-3.0-or-later",
+  "overrides": {
+    "@iota/iota-sdk": "^1.11.0"
+  }
+}

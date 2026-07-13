@@ -1,0 +1,24 @@
+{
+  "name": "@morgendrot/shared",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Isomorphe Hilfsmodule (Node + Next). Per file:-Link aus frontend/ eingebunden; siehe docs/MONOREPO-NEXT-AND-SHARED.md",
+  "sideEffects": false,
+  "exports": {
+    "./einsatz-role-templates": "./einsatz-role-templates.ts",
+    "./einsatz-handoff-template-snapshot": "./einsatz-handoff-template-snapshot.ts",
+    "./einsatz-chain-mode": "./einsatz-chain-mode.ts",
+    "./device-time-trust": "./device-time-trust.ts",
+    "./bytes-base64": "./bytes-base64.ts",
+    "./morgendrot-crypto": "./morgendrot-crypto.ts",
+    "./morgendrot-crypto-session": "./morgendrot-crypto-session.ts",
+    "./morgendrot-crypto-session-wire": "./morgendrot-crypto-session-wire.ts",
+    "./morgendrot-session-keys-archive": "./morgendrot-session-keys-archive.ts",
+    "./morg-team-wire-signature": "./morg-team-wire-signature.ts",
+    "./morgendrot-team-broadcast-crypto": "./morgendrot-team-broadcast-crypto.ts",
+    "./messenger-capabilities-matrix": "./messenger-capabilities-matrix.ts",
+    "./iota-testnet-faucet-url": "./iota-testnet-faucet-url.ts",
+    "./standalone-smartphone-handoff-env": "./standalone-smartphone-handoff-env.ts"
+  }
+}
